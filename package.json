@@ -1,0 +1,121 @@
+{
+  "_from": "conventional-gitlab-releaser",
+  "_id": "conventional-gitlab-releaser@4.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-0hTCni0jzkBs/2cnp1SjCB9KNId73qF7CfwsTdcW0zmHtme/WS+y7p6mFPDWfP8dVf6A+9W+dgJ7B7s3n6fIPQ==",
+  "_location": "/conventional-gitlab-releaser",
+  "_phantomChildren": {
+    "@types/minimist": "1.2.0",
+    "@types/normalize-package-data": "2.4.0",
+    "array-ify": "1.0.0",
+    "arrify": "1.0.1",
+    "conventional-changelog-atom": "2.0.8",
+    "conventional-changelog-codemirror": "2.0.8",
+    "conventional-changelog-ember": "2.0.9",
+    "conventional-changelog-eslint": "3.0.9",
+    "conventional-changelog-express": "2.0.6",
+    "conventional-changelog-jscs": "0.1.0",
+    "conventional-changelog-jshint": "2.0.9",
+    "conventional-changelog-preset-loader": "2.3.4",
+    "conventional-changelog-writer": "4.1.0",
+    "conventional-commits-parser": "3.2.1",
+    "dateformat": "3.0.3",
+    "decamelize": "1.2.0",
+    "decamelize-keys": "1.1.0",
+    "get-pkg-repo": "1.4.0",
+    "git-remote-origin-url": "2.0.0",
+    "hard-rejection": "2.1.0",
+    "inherits": "2.0.4",
+    "is-plain-obj": "1.1.0",
+    "kind-of": "6.0.3",
+    "load-json-file": "4.0.0",
+    "lodash": "4.17.20",
+    "lodash.template": "4.5.0",
+    "loud-rejection": "1.6.0",
+    "min-indent": "1.0.1",
+    "minimist": "1.2.5",
+    "ms": "2.1.2",
+    "normalize-package-data": "2.5.0",
+    "number-is-nan": "1.0.1",
+    "parse-json": "5.1.0",
+    "path-exists": "3.0.0",
+    "path-type": "3.0.0",
+    "q": "1.5.1",
+    "readable-stream": "2.3.7",
+    "strip-indent": "2.0.0",
+    "through2": "2.0.5"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "conventional-gitlab-releaser",
+    "name": "conventional-gitlab-releaser",
+    "escapedName": "conventional-gitlab-releaser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/conventional-gitlab-releaser/-/conventional-gitlab-releaser-4.0.3.tgz",
+  "_shasum": "28abcb6bc9f998471cacc58581423c2ab9c98b1e",
+  "_spec": "conventional-gitlab-releaser",
+  "_where": "/home/ahashem/dev/timeviewer-website",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com",
+    "url": "https://github.com/stevemao"
+  },
+  "bin": {
+    "conventional-gitlab-releaser": "src/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/conventional-changelog/releaser-tools/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "conventional-changelog": "^2.0.0",
+    "dateformat": "^3.0.0",
+    "debug": "^3.1.0",
+    "git-semver-tags": "^2.0.0",
+    "gl-got": "^8.0.0",
+    "lodash.merge": "^4.0.2",
+    "meow": "^7.0.0",
+    "object-assign": "^4.0.1",
+    "q": "^1.4.1",
+    "semver-regex": "^2.0.0",
+    "through2": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Make a new GitLab release from git metadata.",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "files": [
+    "src/"
+  ],
+  "homepage": "https://github.com/conventional-changelog/releaser-tools",
+  "keywords": [
+    "conventional-gitlab-releaser",
+    "gitlab",
+    "release",
+    "releases",
+    "conventional-changelog",
+    "conventional",
+    "changelog",
+    "log"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "conventional-gitlab-releaser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conventional-changelog/releaser-tools.git"
+  },
+  "scripts": {
+    "test": "eslint --fix src/ && nyc --all --cache --include=src/ --exclude=src/cli.js --exclude=src/**/*.spec.js --exclude=src/**/*.mocks.js --reporter=lcov --reporter=text mocha --check-leaks --full-trace --globals __core-js_shared__,__coverage__,YamlEscaper --inline-diffs --no-exit --recursive --reporter=progress --retries 1 src/**/*.spec.js"
+  },
+  "version": "4.0.3"
+}
